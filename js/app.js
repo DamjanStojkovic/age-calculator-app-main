@@ -100,6 +100,9 @@ function validDate() {
 console.log();
 function handleSubmit(x) {
   x.preventDefault();
+  let day = date.getDate();
+  let month = date.getMonth() + 1;
+  let year = date.getFullYear();
 
   if (validate() && validDate()) {
     if (dayInput.value > day) {
